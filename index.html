@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gear 2 Pixpro UI</title>
+		<script type="module" src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="section">
+			<span class="title">Settings</span>
+
+			<div class="setting">
+				<label>FFmpeg path</label>
+				<div class="singleLine">
+					<input type="text" id="ffmpegPath" placeholder="Path to ffmpeg.exe" />
+					<button id="ffmpegPathButton">Browse</button>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label>mp4edit path</label>
+				<div class="singleLine">
+					<input type="text" id="mp4editPath" placeholder="Path to mp4edit.exe" />
+					<button id="mp4editPathButton">Browse</button>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label>Script path</label>
+				<div class="singleLine">
+					<input type="text" id="scriptPath" placeholder="Path to gear360-to-orbit360.ps1 / gear360-to-orbit360.sh" />
+					<button id="scriptPathButton">Browse</button>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label>Metadata folder path</label>
+				<div class="singleLine">
+					<input type="text" id="metadataFolderPath" placeholder="Path to the metadata folder" />
+					<button id="metadataFolderPathButton">Browse</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="section">
+			<div class="flexSpaceBetween">
+				<span class="title">File list</span>
+				<div>
+					<button id="addFileButton">Add File</button>
+					<button id="removeAllFilesButton">Remove All Files</button>
+				</div>
+			</div>
+			<div class="scrollableContainer">
+				<div id="fileList">
+					<span id="noFile">No files selected</span>
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<button id="convertButton">Start conversion</button>
+		</div>
+	</body>
+</html>
